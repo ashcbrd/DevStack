@@ -6,6 +6,7 @@ const { check, validationResult} = require('express-validator');
 
 const Profile = require('../../models/Profile');
 const User = require('../../models/User');
+const { ResultWithContext } = require('express-validator/src/chain');
 
 router.get('/me', auth, async (req, res) => {
     try {
@@ -96,5 +97,32 @@ router.post(
         }
     }
 );
+
+router.get('/', async (req, res) => {
+    try {
+        const profiles = await Profile.find().populate('user', ['name', 'avatar']);
+        res.json(profiles);
+    } catch (err) {
+        console.error(err.message);
+        res.status(500).send('Server Error');
+    }
+});
+
+router.get('/user/:user_id', async (req, res) => {
+    try {
+        const profile = await Profile.findOne({ user: req.params.user_id}).populate('user', ['name', 'avatar']);
+        
+        if(!profile) return res.status(400).json({ msg: 'Profile not found' });
+        
+        res.json(profile);
+    } catch (err) {
+        console.error(err.message);
+        if(err.kind == 'OnjectId') {
+            return res.status(400).json({ msg: 'Profile not found' });
+        }
+
+        res.status(500).send('Server Error');
+    }
+})
 
 module.exports = router;

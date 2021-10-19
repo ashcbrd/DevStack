@@ -2,7 +2,7 @@ import React from "react";
 
 export const Navbar = () => {
   return (
-    <nav classNameName="navbar bg-dark">
+    <nav className="navbar">
       <a href="" className="logo">
         CSS Nav
       </a>
@@ -18,7 +18,7 @@ export const Navbar = () => {
           <a href="#about">Login</a>
         </li>
         <li>
-          <a href="#careers">Signup</a>
+          <a href="#careers">Register</a>
         </li>
       </ul>
     </nav>

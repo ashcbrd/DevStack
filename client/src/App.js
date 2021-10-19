@@ -1,6 +1,7 @@
 import React, { Fragment } from "react";
-import Navbar from "./components/Navbar/Navbar";
-import Landing from "./components/Landing/Landing";
+import Navbar from "./components/layout/Navbar";
+import Landing from "./components/layout/Landing";
+
 import "./App.css";
 
 const App = () => (

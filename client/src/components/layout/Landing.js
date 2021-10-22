@@ -6,13 +6,14 @@ export const Landing = () => {
     <section className="landing">
       <div className="dark-overlay">
         <div className="landing-inner">
-          <h1 className="x-large">Social Network for Developers</h1>
+          <div className="fa fa-laptop-code laptop-icon"></div>
+          <h1 className="x-large">Developers Connect</h1>
           <p className="lead">
-            Create your profile and share your knowledge with other developers.
+            Create your profile, share, and connect with other developers.
           </p>
           <div className="buttons">
             <Link to="/register" className="btn btn-primary">
-              Sign Up
+              Register
             </Link>
             <Link to="/login" className="btn btn-light">
               Login

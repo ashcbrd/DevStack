@@ -5,19 +5,29 @@ export const Navbar = () => {
   return (
     <nav className="navbar">
       <h1>
-        <Link to="/">
-          <i className="fas fa-laptop-code"></i> DevSocial
-        </Link>
+        <a href="/">
+          <i className="fas fa-code"></i> DevConnector
+        </a>
       </h1>
       <ul>
         <li>
-          <a href="profiles.html">Developers</a>
+          <Link to="/developers">Developers</Link>
         </li>
         <li>
-          <Link to="/register">Register</Link>
+          <Link to="/posts">Posts</Link>
         </li>
         <li>
-          <Link to="/login">Login</Link>
+          |
+          <Link to="/dashboard" title="Dashboard">
+            <i className="fas fa-user"></i>
+            <span className="hide-sm">Dashboard</span>
+          </Link>
+        </li>
+        <li>
+          <Link to="/" title="Logout">
+            <i className="fas fa-sign-out-alt"></i>
+            <span className="hide-sm">Logout</span>
+          </Link>
         </li>
       </ul>
     </nav>

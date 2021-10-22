@@ -1,24 +1,23 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export const Navbar = () => {
   return (
-    <nav className="navbar">
-      <a href="" className="logo">
-        CSS Nav
-      </a>
-      <input className="menu-btn" type="checkbox" id="menu-btn" />
-      <label className="menu-icon" for="menu-btn">
-        <span className="navicon"></span>
-      </label>
-      <ul className="menu">
+    <nav className="navbar bg-dark">
+      <h1>
+        <Link to="/">
+          <i className="fas fa-code"></i> DevConnector
+        </Link>
+      </h1>
+      <ul>
         <li>
-          <a href="#work">Developers</a>
+          <a href="profiles.html">Developers</a>
         </li>
         <li>
-          <a href="#about">Login</a>
+          <Link to="/register">Register</Link>
         </li>
         <li>
-          <a href="#careers">Register</a>
+          <Link to="/login">Login</Link>
         </li>
       </ul>
     </nav>

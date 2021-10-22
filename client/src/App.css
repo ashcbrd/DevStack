@@ -5,6 +5,7 @@
   --light-color: #f4f4f4;
   --danger-color: #dc3545;
   --success-color: #28a745;
+  --hover-color: #ffd700;
 }
 
 * {
@@ -49,6 +50,7 @@ img {
   font-size: 4rem;
   line-height: 1.2;
   margin-bottom: 1rem;
+  text-shadow: 3px 3px 1px var(--primary-color);
 }
 
 .large {
@@ -310,6 +312,7 @@ button {
   top: 0;
   border-bottom: solid 1px var(--primary-color);
   opacity: 0.9;
+  background-color: var(--primary-color);
 }
 
 .navbar ul {
@@ -323,7 +326,7 @@ button {
 }
 
 .navbar a:hover {
-  color: var(--primary-color);
+  color: var(--hover-color);
 }
 
 .navbar .welcome span {
@@ -347,6 +350,12 @@ button {
   align-items: center;
   justify-content: center;
   text-align: center;
+}
+
+.laptop-icon {
+  font-size: 10em;
+  color: var(--primary-color);
+  margin-bottom: 20px;
 }
 
 /* Profiles Page */

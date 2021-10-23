@@ -1,5 +1,5 @@
 import React from "react";
-import { Fade, LightSpeed, Slide } from "react-reveal";
+import { Fade, Slide } from "react-reveal";
 import { Link } from "react-router-dom";
 
 export const Landing = () => {

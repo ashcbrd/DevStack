@@ -9,14 +9,12 @@ export const Landing = () => {
         <div className="landing-left">
           <Slide left>
             <h1 className="x-large">SOCIAL NETWORK FOR DEVELOPERS</h1>
-          </Slide>
-          <LightSpeed delay={800} left>
             <p className="lead">
               Create a developer portfolio, share posts and connect with other
               developers in the community.
             </p>
-          </LightSpeed>
-          <Fade delay={1500} bottom>
+          </Slide>
+          <Fade delay={1000} bottom>
             <div className="buttons">
               <Link to="/register" className="btn btn-primary">
                 Register

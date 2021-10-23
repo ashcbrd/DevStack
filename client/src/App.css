@@ -183,6 +183,13 @@ img {
   border: 1px solid var(--primary-color);
 }
 
+.btn-primary,
+.btn-light {
+  width: 150px;
+  border-radius: 5px;
+  text-align: center;
+}
+
 .bg-light,
 .badge-light,
 .alert-light {
@@ -274,6 +281,7 @@ img {
   padding: 0.4rem;
   font-size: 1.2rem;
   border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
 .form input[type="submit"],
@@ -381,15 +389,6 @@ button {
   align-items: center;
   margin: auto 70px 50px auto;
   color: #fff;
-}
-
-@keyframes changeColor {
-  50% {
-    color: #fff;
-  }
-  100% {
-    color: var(--primary-color);
-  }
 }
 
 /* Profiles Page */

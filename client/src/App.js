@@ -13,7 +13,7 @@ const App = () => (
       <Route exact path="/" component={Landing} />
       <section className="container">
         <Switch>
-          <Route path="/register" component={Register} />
+          <Route exact path="/register" component={Register} />
           <Route exact path="/login" component={Login} />
         </Switch>
       </section>

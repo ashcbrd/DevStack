@@ -15,7 +15,7 @@
 
 .text-icon,
 .main-icon {
-  text-shadow: 5px 5px 1px var(--primary-color),
-    4px 4px 1px var(--primary-color), 3px 3px 1px var(--primary-color),
-    2px 2px 1px var(--primary-color), 1px 1px 1px var(--primary-color);
+  text-shadow: 4px 4px 1px var(--primary-color),
+    3px 3px 1px var(--primary-color), 2px 2px 1px var(--primary-color),
+    1px 1px 1px var(--primary-color);
 }

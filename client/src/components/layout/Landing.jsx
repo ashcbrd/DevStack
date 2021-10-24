@@ -13,7 +13,7 @@ export const Landing = () => {
             </h1>
           </Slide>
           <Slide delay={500} left>
-            <p className="text-white text-3xl">
+            <p className="text-white text-3xl mb-4">
               Create a developer portfolio, share posts and connect with other
               developers in the community.
             </p>

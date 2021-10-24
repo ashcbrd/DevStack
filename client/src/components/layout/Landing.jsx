@@ -28,7 +28,7 @@ export const Landing = () => {
               </Link>
               <Link
                 to="/login"
-                className="text-xl text-blue-500 p-4 px-14 border-2 border-blue-500 rounded-lg"
+                className="text-xl text-white p-4 px-14 border-2 border-blue-500 rounded-lg"
               >
                 Login
               </Link>

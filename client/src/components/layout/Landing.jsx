@@ -8,7 +8,9 @@ export const Landing = () => {
       <div className="dark-overlay landing-container">
         <div className="landing-left">
           <Slide left>
-            <h1 className="x-large">SOCIAL NETWORK FOR DEVELOPERS</h1>
+            <h1 className="x-large font-extrabold">
+              SOCIAL NETWORK FOR DEVELOPERS
+            </h1>
             <p className="lead">
               Create a developer portfolio, share posts and connect with other
               developers in the community.

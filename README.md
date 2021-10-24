@@ -2,4 +2,4 @@
 
 Codenector is a social netwoking site for developers that is made using the MERN stack. Users can create their profile/portfolio, share and connect with other developers.
 
-![Screen Shot 2021-10-23 at 4 32 42 AM](https://user-images.githubusercontent.com/67548363/138561713-ab4a3ce3-eda2-4b2c-80ad-a40507e457ef.jpeg)
+![Screen Shot 2021-10-25 at 3 25 37 AM](https://user-images.githubusercontent.com/67548363/138609601-49cf6c54-69fa-4e95-9a37-6c5ae0e8f714.jpeg)

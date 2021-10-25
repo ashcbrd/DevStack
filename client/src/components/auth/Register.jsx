@@ -26,13 +26,17 @@ export const Register = () => {
 
   return (
     <Fragment>
-      <h1 className="large text-primary">Sign Up</h1>
-      <p className="lead">
+      <h1 className="">Sign Up</h1>
+      <p className="">
         <i className="fas fa-user"></i> Create Your Account
       </p>
-      <form className="form" onSubmit={(event) => onSubmit(event)}>
+      <form
+        className="bg-blue-500 p-8 rounded-xl w-4/5 flex flex-col mx-auto "
+        onSubmit={(event) => onSubmit(event)}
+      >
         <div className="form-group">
           <input
+            className="w-8 bg-gray-200  appearance-none border-2 border-gray-200 rounded-xl w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-blue-500"
             type="text"
             placeholder="Name"
             name="name"
@@ -43,6 +47,7 @@ export const Register = () => {
         </div>
         <div className="form-group">
           <input
+            className="bg-gray-200 my-3 appearance-none border-2 border-gray-200 rounded-xl w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-blue-500"
             type="email"
             placeholder="Email Address"
             name="email"
@@ -50,13 +55,14 @@ export const Register = () => {
             onChange={(event) => onChange(event)}
             required
           />
-          <small className="form-text">
+          <small className="">
             This site uses Gravatar so if you want a profile image, use a
             Gravatar email
           </small>
         </div>
         <div className="form-group">
           <input
+            className="bg-gray-200 my-3 appearance-none border-2 border-gray-200 rounded-xl w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-blue-500"
             type="password"
             placeholder="Password"
             name="password"
@@ -68,6 +74,7 @@ export const Register = () => {
         </div>
         <div className="form-group">
           <input
+            className="bg-gray-200 my-3 appearance-none border-2 border-gray-200 rounded-xl w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-blue-500"
             type="password"
             placeholder="Confirm Password"
             name="password2"
@@ -77,9 +84,9 @@ export const Register = () => {
             required
           />
         </div>
-        <input type="submit" className="btn btn-primary" value="Register" />
+        <input type="submit" className="" value="Register" />
       </form>
-      <p className="my-1">
+      <p className="">
         Already have an account? <Link to="/ogin">Login</Link>
       </p>
     </Fragment>

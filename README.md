@@ -1,4 +1,4 @@
-# DevStack
+# DevStack (WIP)
 
 DevStack is a social netwoking site for developers that is made using the MERN stack. Users can create their profile/portfolio, share and connect with other developers.
 

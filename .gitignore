@@ -1,7 +1,7 @@
-node_modules
+/node_modules
 
 /client/node_modules
 
 .DS_Store
 
-config/default.json
+/config/default.json

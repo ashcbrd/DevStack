@@ -1,6 +1,5 @@
 import React, { Fragment, useState } from "react";
 import { Link } from "react-router-dom";
-import axios from "axios";
 
 export const Register = () => {
   const [formData, setFormData] = useState({
@@ -26,9 +25,9 @@ export const Register = () => {
 
   return (
     <Fragment>
-      <div className="flex border border-gray-200 m-20 mx-40 shadow-xl sm:flex-col-reverse sm:m-12">
+      <div className="flex border border-gray-200 m-10 mx-40 shadow-xl">
         <form
-          className="w-5/6 p-8 m-4/5 min-w-4/5 flex flex-col mx-auto sm:p-2"
+          className="w-5/6 p-8 m-4/5 min-w-4/5 flex flex-col mx-auto"
           onSubmit={(event) => onSubmit(event)}
         >
           <h1 className="text-4xl font-bold text-blue-500 my-4">Register</h1>
@@ -88,13 +87,13 @@ export const Register = () => {
           </div>
           <input
             type="submit"
-            className="w-full text-xl  my-3 text-white shadow-base p-1 w-32 bg-blue-500 transition-all border-2 border-blue-500 hover:opacity-80 hover:shadow-lg sm:mw-auto sm:w-full"
+            className="w-full text-xl  my-3 text-white shadow-base p-1 w-32 bg-blue-500 transition-all border-2 border-blue-500 hover:opacity-80 hover:shadow-lg"
             value="Register"
           />
-          <p className="my-4 text-gray-500 text-xs hover:opacity-80 cursor-pointer sm:my-2">
+          <p className="my-4 text-gray-500 text-xs hover:opacity-80 cursor-pointer">
             Forgot password?
           </p>
-          <p className="text-gray-500 sm:mb-6 text-xs">
+          <p className="text-gray-500 text-xs">
             Already have an account?{" "}
             <Link
               className="text-blue-500 hover:opacity-70 hover:underline transition-all"

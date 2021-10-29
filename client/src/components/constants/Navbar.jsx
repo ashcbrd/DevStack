@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <nav className="bg-blue-500 shadow-xl">
+    <nav className="fixed top-0 right-0 left-0 bg-blue-500 shadow-xl">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
@@ -17,7 +17,7 @@ const Navbar = () => {
                 <div class="p-8">
                   <div class="bg-white h-12 flex items-center rounded-full">
                     <input
-                      class="bg-transparent rounded-l-full w-full py-4 px-6 text-gray-700 leading-tight focus:outline-none"
+                      class="bg-transparent rounded-l-full w-64 py-4 px-6 text-gray-700 leading-tight focus:outline-none"
                       id="search"
                       type="text"
                       placeholder="Search"
@@ -30,7 +30,7 @@ const Navbar = () => {
                   </div>
                 </div>
 
-                <div className="ml-64">
+                <div className="ml-64 flex justify-between w-full">
                   <Link
                     to="/developers"
                     className="hover:bg-blue-700 text-white px-3 py-2 rounded-md text-sm font-medium"
@@ -44,7 +44,6 @@ const Navbar = () => {
                   >
                     Posts
                   </Link>
-
                   <Link
                     to="/login"
                     className="text-white hover:bg-blue-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
@@ -137,7 +136,7 @@ const Navbar = () => {
                 </div>
               </div>
               <Link
-                to="developers"
+                to="/developers"
                 className="hover:bg-blue-700 text-white block px-3 py-2 rounded-md text-base font-medium"
               >
                 Developers

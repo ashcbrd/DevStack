@@ -4,7 +4,11 @@
 
 .bg {
   position: relative;
-  background: url("../images/showcase.jpg") no-repeat center center/cover;
+  background: url("images/showcase.jpg") no-repeat center center/cover;
+}
+.reg-bg {
+  background: url("https://images.pexels.com/photos/211856/pexels-photo-211856.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260")
+    no-repeat center center/cover;
 }
 
 .x-large {

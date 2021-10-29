@@ -25,9 +25,9 @@ export const Register = () => {
   };
 
   return (
-    <div className="flex border justify-end border-gray-200 m-10 shadow-xl md:flex-row">
+    <div className="flex mt-16 w-full md:my-24 md:shadow-xl md:border md:border-gray-200 md:rounded-xl md:mx-20 md:h-screen">
       <form
-        className="w-full p-8 flex flex-col md:w-1/3"
+        className="flex flex-col w-full p-8 md:m-10 md:w-1/2"
         onSubmit={(event) => onSubmit(event)}
       >
         <h1 className="text-4xl font-bold text-blue-500 my-4">Register</h1>
@@ -99,13 +99,7 @@ export const Register = () => {
           </Link>
         </p>
       </form>
-      <div className="hidden bg-blue-500 h-full w-1/2 md:block">
-        <img
-          className="object-cover h-full w-full bg-center relative"
-          src="https://images.pexels.com/photos/211856/pexels-photo-211856.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-          alt="Register background"
-        />
-      </div>
+      <div className="bg-blue-500 hidden md:block reg-bg w-full rounded-r-xl" />
     </div>
   );
 };

@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import axios from "axios";
 
-export const Register = () => {
+const Register = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -25,10 +24,11 @@ export const Register = () => {
   };
 
   return (
-    <div className="flex mt-16 w-full md:my-24 md:shadow-xl md:border md:border-gray-200 md:rounded-xl md:mx-20 md:h-screen">
+    <div className="flex w-full mt-16 md:my-24 md:shadow-xl md:border md:border-gray-200 md:rounded-xl md:mx-20 md:h-screen">
+      <div className="bg-blue-500 hidden md:block reg-bg w-full rounded-l-xl" />
       <div className="w-full md:w-1/2 items-center">
         <form
-          className="flex flex-col mx-8 p-8 md:mx-10 md:mt-10 md:w-4/5"
+          className="flex flex-col mx-8 p-8 md:mx-auto md:mt-10 md:w-full"
           onSubmit={(e) => onSubmit(e)}
         >
           <h1 className="text-4xl font-bold text-blue-500 my-4">Register</h1>
@@ -98,7 +98,6 @@ export const Register = () => {
           </Link>
         </p>
       </div>
-      <div className="bg-blue-500 hidden md:block reg-bg w-full rounded-r-xl" />
     </div>
   );
 };

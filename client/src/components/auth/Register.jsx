@@ -86,10 +86,7 @@ export const Register = () => {
           className="w-full my-3 text-white rounded shadow-base p-1 w-32 bg-blue-500 transition-all border-2 border-blue-500 hover:opacity-80 hover:shadow-lg"
           value="Register"
         />
-        <p className="my-4 text-gray-500 text-xs hover:opacity-80 cursor-pointer">
-          Forgot password?
-        </p>
-        <p className="text-gray-500 text-xs">
+        <p className="mt-4 text-center text-gray-500 text-xs">
           Already have an account?{" "}
           <Link
             className="text-blue-500 hover:opacity-70 hover:underline transition-all"

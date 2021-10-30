@@ -7,7 +7,12 @@
   background: url("images/showcase.jpg") no-repeat center center/cover;
 }
 .reg-bg {
-  background: url("https://images.pexels.com/photos/211856/pexels-photo-211856.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260")
+  background: url("https://images.unsplash.com/photo-1577375729152-4c8b5fcda381?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1160&q=80")
+    no-repeat center center/cover;
+}
+
+.login-bg {
+  background: url("https://images.unsplash.com/photo-1508105859382-b487af436eff?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1160&q=80")
     no-repeat center center/cover;
 }
 

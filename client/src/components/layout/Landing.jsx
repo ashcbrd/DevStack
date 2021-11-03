@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 export const Landing = () => {
   return (
     <section className="bg h-screen w-screen">
-      <div className="flex bg-black bg-opacity-50 justify-between">
+      <div className="flex flex-col-reverse bg-black bg-opacity-50 md:justify-betweens md:flex-row">
         <div className="flex flex-col justify-center h-screen w-4/6 ml-16">
           <Slide left>
             <h1 className="x-large text-8xl font-sans font-bold text-white mb-4">

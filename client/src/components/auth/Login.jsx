@@ -18,7 +18,7 @@ const Login = () => {
   };
 
   return (
-    <div className="flex w-full mt-16 md:my-24 md:shadow-xl md:border md:border-gray-200 md:rounded-xl md:mx-20 md:h-screen">
+    <div className="flex w-full overflow-hidden mt-16 md:my-24 md:shadow-xl md:border md:border-gray-200 md:rounded-xl md:mx-20 md:h-screen">
       <div className="w-full md:w-1/2 items-center">
         <form
           className="flex flex-col mx-8 p-8 md:mx-auto md:mt-10 md:w-full"
@@ -69,7 +69,7 @@ const Login = () => {
           </Link>
         </p>
       </div>
-      <div className="bg-blue-500 hidden md:block login-bg w-full rounded-r-xl" />
+      <div className="bg-blue-500 hidden md:block login-bg w-full" />
     </div>
   );
 };

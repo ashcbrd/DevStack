@@ -14,8 +14,8 @@ export const Landing = () => {
           </Slide>
           <Slide delay={500} left>
             <p className="text-white text-3xl mb-4">
-              Create a developer portfolio, share posts and connect with other
-              developers in the community.
+              Create a developer profile/portfolio, share posts and connect with
+              other developers in the community.
             </p>
           </Slide>
           <Fade delay={1500} bottom>

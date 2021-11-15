@@ -5,8 +5,8 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <nav className="fixed top-0 right-0 left-0 bg-blue-500 shadow-xl">
-      <div className="flex justify-between items-center flex-row max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <nav className="sticky w-full top-0 bg-blue-500 shadow-xl">
+      <div className="relative flex justify-between items-center flex-row max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex-shrink-0">
           <Link
             className="fa fa-laptop-code h-8 w-8 text-white text-2xl "

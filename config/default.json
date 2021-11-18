@@ -1,0 +1,6 @@
+{
+  "mongoURI": "mongodb+srv://ashcbrd5:ashcbrd@codenector.zcf3e.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
+  "jwtSecret": "mysecrettoken",
+  "githubClientId": "2e18b762fb1ae50c8956",
+  "githubSecret": "16b991860376acbd0382b6aa7281b3a251ef20ac"
+}

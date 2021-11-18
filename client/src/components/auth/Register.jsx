@@ -69,7 +69,6 @@ const Register = ({ setAlert, register }) => {
               minLength="6"
               value={password}
               onChange={(e) => onChange(e)}
-              required
             />
           </div>
           <div>
@@ -81,7 +80,6 @@ const Register = ({ setAlert, register }) => {
               minLength="6"
               value={password2}
               onChange={(e) => onChange(e)}
-              required
             />
           </div>
           <input

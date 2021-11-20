@@ -1,7 +1,10 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, Redirect } from "react-router-dom";
+import { connect } from "react-redux";
+import { login } from "actions/auth";
+import PropTypes from "prop-types";
 
-const Login = () => {
+const Login = ({ login, isAuthenticated }) => {
   const [formData, setFormData] = useState({
     email: "",
     password: "",
@@ -14,11 +17,15 @@ const Login = () => {
 
   const onSubmit = async (e) => {
     e.preventDefault();
-    console.log("SUCESS");
+    login(email, password);
   };
 
+  if (isAuthenticated) {
+    return <Redirect to="/dashboard" />;
+  }
+
   return (
-    <div className="flex w-full overflow-hidden mt-16 md:my-24 md:shadow-xl md:border md:border-gray-200 md:rounded-xl md:mx-20 md:h-screen">
+    <div className="flex w-full overflow-hidden md:my-10 md:shadow-xl md:border md:border-gray-200 md:rounded-xl md:mx-20 md:h-screen">
       <div className="w-full md:w-1/2 items-center">
         <form
           className="flex flex-col mx-8 p-8 md:mx-auto md:mt-10 md:w-full"
@@ -74,4 +81,13 @@ const Login = () => {
   );
 };
 
-export default Login;
+Login.propTypes = {
+  login: PropTypes.func.isRequired,
+  isAuthenticated: PropTypes.bool,
+};
+
+const mapStateToProps = (state) => ({
+  isAuthenticated: state.auth.isAuthenticated,
+});
+
+export default connect(mapStateToProps, { login })(Login);

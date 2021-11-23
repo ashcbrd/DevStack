@@ -95,7 +95,7 @@ const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
             <div ref={ref} className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
               <a
                 onClick={logout}
-                href="#*"
+                href="#!"
                 className="flex items-center hover:bg-blue-700 text-white block px-3 py-2 rounded-md text-base font-medium"
               >
                 <i className="fas fa-sign-out-alt mr-2" />

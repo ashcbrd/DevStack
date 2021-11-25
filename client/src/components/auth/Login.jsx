@@ -25,10 +25,10 @@ const Login = ({ login, isAuthenticated }) => {
   }
 
   return (
-    <div className="flex w-full overflow-hidden md:my-10 md:shadow-xl md:border md:border-gray-200 md:rounded-xl md:mx-20 md:h-screen">
+    <div className="flex w-full overflow-hidden md:my-10 md:shadow-xl md:border md:border-gray-200 md:rounded-xl md:mx-20 md:h-full">
       <div className="w-full md:w-1/2 items-center">
         <form
-          className="flex flex-col mx-8 p-8 md:mx-auto md:mt-10 md:w-full"
+          className="flex flex-col mx-8 p-8 md:mx-auto md:w-full"
           onSubmit={(e) => onSubmit(e)}
         >
           <h1 className="text-4xl font-bold text-blue-500 my-4">Login</h1>
@@ -66,7 +66,7 @@ const Login = ({ login, isAuthenticated }) => {
             value="Login"
           />
         </form>
-        <p className=" text-center text-gray-500 text-xs">
+        <p className="mb-14 text-center text-gray-500 text-xs">
           Don't have an account?{" "}
           <Link
             className="text-blue-500 hover:opacity-70 hover:underline transition-all"

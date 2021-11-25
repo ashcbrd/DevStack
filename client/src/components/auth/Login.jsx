@@ -28,7 +28,7 @@ const Login = ({ login, isAuthenticated }) => {
     <div className="flex w-full overflow-hidden md:my-10 md:shadow-xl md:border md:border-gray-200 md:rounded-xl md:mx-20 md:h-full">
       <div className="w-full md:w-1/2 items-center">
         <form
-          className="flex flex-col mx-8 p-8 md:mx-auto md:w-full"
+          className="flex flex-col mx-8 p-8 md:mx-auto md:my-10 md:w-full"
           onSubmit={(e) => onSubmit(e)}
         >
           <h1 className="text-4xl font-bold text-blue-500 my-4">Login</h1>

@@ -32,14 +32,28 @@ const Register = ({ setAlert, register, isAuthenticated }) => {
   }
 
   return (
-    <div className="flex w-full overflow-hidden md:my-10 md:shadow-xl md:border md:border-gray-200 md:rounded-xl md:mx-20 md:h-full">
-      <div className="bg-blue-500 hidden md:block opacity- reg-bg w-full" />
+    <div className="flex w-full overflow-hidden md:my-16 md:shadow-xl md:border md:border-gray-200 md:rounded-xl md:mx-20 md:h-full">
+      <div className="hidden md:flex flex-col justify-center items-center w-full">
+        {" "}
+        <h1 className="text-8xl font-bold text-blue-500 my-4">Register</h1>
+        <p className="mt-10 text-center text-gray-500 text-xs">
+          Already have an account?{" "}
+          <Link
+            className="text-blue-500 hover:opacity-70 hover:underline transition-all"
+            to="/login"
+          >
+            Login
+          </Link>
+        </p>
+      </div>
       <div className="w-full md:w-1/2 items-center">
         <form
-          className="flex flex-col mx-8 p-8 md:mx-auto md:w-full"
+          className="flex flex-col mx-8 p-8 md:mx-auto md:my-10 md:w-full"
           onSubmit={(e) => onSubmit(e)}
         >
-          <h1 className="text-4xl font-bold text-blue-500 my-4">Register</h1>
+          <h1 className="md:hidden text-4xl font-bold text-blue-500 my-4">
+            Register
+          </h1>
           <p className="text-gray-500 mb-4">
             <i className="fas fa-user"></i> Create Your Account
           </p>
@@ -92,7 +106,7 @@ const Register = ({ setAlert, register, isAuthenticated }) => {
             value="Register"
           />
         </form>
-        <p className="mb-14 text-center text-gray-500 text-xs">
+        <p className="md:hidden text-center text-gray-500 text-xs">
           Already have an account?{" "}
           <Link
             className="text-blue-500 hover:opacity-70 hover:underline transition-all"

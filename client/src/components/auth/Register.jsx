@@ -36,7 +36,7 @@ const Register = ({ setAlert, register, isAuthenticated }) => {
       <div className="hidden md:flex flex-col justify-center items-center w-full">
         {" "}
         <h1 className="text-8xl font-bold text-blue-500 my-4">Register</h1>
-        <p className="mt-10 text-center text-gray-500 text-xs">
+        <p className="mt-10 text-center text-xs md:text-base text-gray-500 text-xs">
           Already have an account?{" "}
           <Link
             className="text-blue-500 hover:opacity-70 hover:underline transition-all"

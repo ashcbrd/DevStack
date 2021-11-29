@@ -62,11 +62,11 @@ const Login = ({ login, isAuthenticated }) => {
 
           <input
             type="submit"
-            className="w-full my-3 text-white rounded shadow-base p-1 w-32 bg-blue-500 transition-all border-2 border-blue-500 hover:opacity-80 hover:shadow-lg"
+            className="w-full my-3 text-white rounded-full shadow-base p-1 w-32 bg-blue-500 transition-all border-2 border-blue-500 hover:opacity-80 hover:shadow-lg"
             value="Login"
           />
         </form>
-        <p className="mb-14 text-center text-gray-500 text-xs">
+        <p className="md:hidden text-center text-gray-500 text-xs">
           Don't have an account?{" "}
           <Link
             className="text-blue-500 hover:opacity-70 hover:underline transition-all"
@@ -76,7 +76,18 @@ const Login = ({ login, isAuthenticated }) => {
           </Link>
         </p>
       </div>
-      <div className="bg-blue-500 hidden md:block login-bg w-full" />
+      <div className="hidden bg-blue-500 rounded-tl-full md:flex flex-col justify-center items-center w-full">
+        <h1 className="text-8xl font-bold text-white my-4">Login</h1>
+        <p className="mt-10 text-center text-xs md:text-basenpm  text-white text-xs">
+          Already have an account?{" "}
+          <Link
+            className="bg-white rounded-full p-2 px-4 text-blue-500 ml-2 hover:opacity-70 transition-all"
+            to="/register"
+          >
+            Register
+          </Link>
+        </p>
+      </div>
     </div>
   );
 };

@@ -4,16 +4,16 @@ import { Link } from "react-router-dom";
 
 export const Landing = () => {
   return (
-    <section className="bg h-screen w-screen">
-      <div className="flex flex-col-reverse bg-black bg-opacity-50 md:justify-betweens md:flex-row">
+    <section className="h-screen w-screen">
+      <div className="flex flex-col-reverse bg-white bg-opacity-50 md:justify-betweens md:flex-row">
         <div className="flex flex-col justify-center h-screen w-4/6 ml-16">
           <Slide left>
-            <h1 className="x-large text-8xl font-sans font-bold text-white mb-4">
+            <h1 className="x-large text-8xl font-sans font-bold text-blue-500 mb-4">
               SOCIAL NETWORK FOR DEVELOPERS
             </h1>
           </Slide>
           <Slide delay={500} left>
-            <p className="text-white text-3xl mb-4">
+            <p className="text-white text-blue-500 text-3xl mb-4">
               Create a developer profile/portfolio, share posts and connect with
               other developers in the community.
             </p>
@@ -28,7 +28,7 @@ export const Landing = () => {
               </Link>
               <Link
                 to="/login"
-                className="text-xl text-white p-4 px-14 border-2 border-blue-500 hover:opacity-80 rounded-lg"
+                className="text-xl text-blue-500 p-4 px-14 border-2 border-blue-500 hover:opacity-80 rounded-lg"
               >
                 Login
               </Link>

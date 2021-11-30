@@ -32,12 +32,12 @@ const Register = ({ setAlert, register, isAuthenticated }) => {
   }
 
   return (
-    <div className="flex overflow-hidden w-full md:w-5/6 md:my-16 md:shadow-xl md:border md:border-gray-200 md:rounded-xl md:h-full">
+    <div className="flex absolute inset-x-0 m-w-full max-w-7xl overflow-hidden md:my-14 md:shadow-xl md:border md:border-gray-200 md:rounded-xl md:mx-auto md:h-3/4">
       <div className="hidden bg-blue-500 rounded-tr-full md:flex flex-col justify-center items-center w-full">
         {" "}
         <h1 className="text-8xl font-bold text-white my-4">Register</h1>
         <p className="mt-10 text-center text-xs md:text-basenpm  text-white text-xs">
-          Already have an account?{" "}
+          Don't have an account?{" "}
           <Link
             className="bg-white rounded-full p-2 px-4 text-blue-500 ml-2 hover:opacity-70 transition-all"
             to="/login"
@@ -46,9 +46,9 @@ const Register = ({ setAlert, register, isAuthenticated }) => {
           </Link>
         </p>
       </div>
-      <div className="flex flex-col w-full md:w-1/2 items-center">
+      <div className="md:flex w-full md:w-1/2 items-center">
         <form
-          className="h-full w-full flex flex-col mx-8 p-8 md:mx-auto md:w-full"
+          className="flex flex-col mx-8 p-8 md:mx-auto md:w-full"
           onSubmit={(e) => onSubmit(e)}
         >
           <h1 className="md:hidden text-4xl font-bold text-blue-500 my-4">
@@ -107,7 +107,7 @@ const Register = ({ setAlert, register, isAuthenticated }) => {
           />
         </form>
         <p className="md:hidden text-center text-gray-500 text-xs">
-          Already have an account?{" "}
+          Don't have an account?{" "}
           <Link
             className="text-blue-500 hover:opacity-70 hover:underline transition-all"
             to="/login"

@@ -4,18 +4,10 @@
   --light-color: #f4f4f4;
   --danger-color: #dc3545;
   --success-color: #28a745;
-  --dark-blue: #02198b;
-}
-
-.bg {
-  position: relative;
-  background: url("images/showcase.jpg") no-repeat center center/cover;
 }
 
 .x-large {
-  text-shadow: 5px 5px 1px var(--dark-blue), 4px 4px 1px var(--dark-blue),
-    3px 3px 1px var(--dark-blue), 2px 2px 1px var(--dark-blue),
-    1px 1px 1px var(--dark-blue);
+  text-shadow: 2px 2px 1px #fff, 6px 6px 1px var(--primary-color);
 }
 
 .text-icon,

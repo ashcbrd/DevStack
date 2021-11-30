@@ -25,13 +25,15 @@ const Login = ({ login, isAuthenticated }) => {
   }
 
   return (
-    <div className="flex w-full overflow-hidden md:my-10 md:shadow-xl md:border md:border-gray-200 md:rounded-xl md:mx-20 md:h-full">
-      <div className="w-full md:w-1/2 items-center">
+    <div className="flex absolute inset-x-0 w-full max-w-7xl overflow-hidden md:my-14 md:shadow-xl md:border md:border-gray-200 md:rounded-xl md:mx-auto md:h-3/4">
+      <div className="md:flex w-full md:w-1/2 items-center">
         <form
           className="flex flex-col mx-8 p-8 md:mx-auto md:my-10 md:w-full"
           onSubmit={(e) => onSubmit(e)}
         >
-          <h1 className="text-4xl font-bold text-blue-500 my-4">Login</h1>
+          <h1 className="md:hidden text-4xl font-bold text-blue-500 my-4">
+            Login
+          </h1>
           <p className="text-gray-500 mb-4">
             <i className="fas fa-user"></i> Login To Your Account
           </p>

@@ -8,7 +8,11 @@ const Dashboard = ({ getCurrentProfile, auth, profile }) => {
     getCurrentProfile();
   }, []);
 
-  return <div>Dashboard</div>;
+  return (
+    <div className="absolute text-8xl text-blue-500 font-bold m-auto top-1/2">
+      Dashboard 🛠
+    </div>
+  );
 };
 
 Dashboard.propTypes = {

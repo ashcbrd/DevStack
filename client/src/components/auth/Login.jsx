@@ -25,7 +25,7 @@ const Login = ({ login, isAuthenticated }) => {
   }
 
   return (
-    <div className="flex absolute inset-x-0 w-full max-w-7xl overflow-hidden md:my-14 md:shadow-xl md:border md:border-gray-200 md:rounded-xl md:mx-auto md:h-3/4">
+    <div className="flex mt-10 absolute z-0 inset-0 w-full max-w-7xl overflow-hidden md:my-auto md:shadow-xl md:border md:border-gray-200 md:rounded-xl md:mx-auto md:h-3/4">
       <div className="md:flex w-full md:w-1/2 items-center">
         <form
           className="flex flex-col mx-8 p-8 md:mx-auto md:my-10 md:w-full"

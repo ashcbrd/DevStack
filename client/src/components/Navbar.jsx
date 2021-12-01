@@ -246,7 +246,7 @@ const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
   );
 
   return (
-    <nav className="sticky w-full top-0 bg-blue-500 shadow-xl">
+    <nav className="sticky w-full top-0 z-40 bg-blue-500 shadow-xl">
       {!loading && (
         <Fragment>{isAuthenticated ? authLinks : guestLinks}</Fragment>
       )}

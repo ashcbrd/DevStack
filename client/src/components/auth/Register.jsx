@@ -32,7 +32,7 @@ const Register = ({ setAlert, register, isAuthenticated }) => {
   }
 
   return (
-    <div className="flex absolute inset-x-0 m-w-full max-w-7xl overflow-hidden md:my-14 md:shadow-xl md:border md:border-gray-200 md:rounded-xl md:mx-auto md:h-3/4">
+    <div className="flex mt-10 absolute inset-0 m-w-full max-w-7xl overflow-hidden md:my-auto md:shadow-xl md:border md:border-gray-200 md:rounded-xl md:mx-auto md:h-3/4">
       <div className="hidden bg-blue-500 rounded-tr-full md:flex flex-col justify-center items-center w-full">
         {" "}
         <h1 className="text-8xl font-bold text-white my-4">Register</h1>

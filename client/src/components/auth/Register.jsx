@@ -37,7 +37,7 @@ const Register = ({ setAlert, register, isAuthenticated }) => {
       <div className="hidden bg-blue-500 rounded-tr-full md:flex flex-col justify-center items-center w-full">
         {" "}
         <h1 className="text-8xl font-bold text-white my-4">Register</h1>
-        <p className="reg mt-10 text-center text-xs md:text-basenpm  text-white text-xs">
+        <p className="mt-10 text-center text-xs md:text-basenpm  text-white text-xs">
           Don't have an account?{" "}
           <Link
             className="bg-white rounded-full p-2 px-4 text-blue-500 ml-2 hover:opacity-70 transition-all"

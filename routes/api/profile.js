@@ -6,7 +6,7 @@ const { check, validationResult } = require("express-validator");
 require("dotenv").config();
 
 const Profile = require("../../models/Profile");
-const User = require("../../models/User");
+const User = require("../../models/User").default;
 const { ResultWithContext } = require("express-validator/src/chain");
 
 // @route Get api/profile/me
@@ -138,7 +138,6 @@ router.get("/user/:user_id", async (req, res) => {
     if (err.kind == "OnjectId") {
       return res.status(400).json({ msg: "Profile not found" });
     }
-
     res.status(500).send("Server Error");
   }
 });

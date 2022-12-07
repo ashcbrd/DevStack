@@ -23,7 +23,7 @@ const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
               <div className="ml-10 flex items-baseline space-x-4">
                 <div className="ml-auto flex justify-between w-full">
                   <Link to="/dashboard">
-                    <i className="fas fa-sign-out-alt mr-2" />
+                    <i className="fas fa-user mr-2" />
                     Dashboard
                   </Link>
                   <a

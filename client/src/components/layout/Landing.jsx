@@ -1,9 +1,13 @@
 import React from "react";
 import { Fade, Slide } from "react-reveal";
-import { Link } from "react-router-dom";
-import "styles/Landing.css";
+import { Link, Redirect } from "react-router-dom";
+import { connect } from "react-redux";
+import PropTypes from "prop-types";
 
-export const Landing = () => {
+export const Landing = ({ isAuthenticated }) => {
+  if (isAuthenticated) {
+    return <Redirect to="dashboard" />;
+  }
   return (
     <section>
       <div className="flex bg-white md:justify-center">
@@ -41,4 +45,12 @@ export const Landing = () => {
   );
 };
 
-export default Landing;
+Landing.propTypes = {
+  isAuthenticated: PropTypes.bool,
+};
+
+const mapStateToProps = (state) => ({
+  isAuthenticated: state.auth.isAuthenticated,
+});
+
+export default connect(mapStateToProps)(Landing);

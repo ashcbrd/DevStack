@@ -1,17 +1,42 @@
-import React, { useEffect } from "react";
+import React, { Fragment, useEffect } from "react";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { getCurrentProfile } from "actions/profile";
+import Loading from "../layout/Loading";
+import { Link } from "react-router-dom";
+import DashboardActions from "./DashboardActions";
 
-const Dashboard = ({ getCurrentProfile, auth, profile }) => {
+const Dashboard = ({
+  getCurrentProfile,
+  auth: { user },
+  profile: { profile, loading },
+}) => {
   useEffect(() => {
     getCurrentProfile();
   }, []);
 
-  return (
-    <div className="absolute text-8xl text-blue-500 font-bold m-auto top-1/2">
-      Dashboard 🛠
-    </div>
+  return loading && profile === null ? (
+    <Loading />
+  ) : (
+    <Fragment>
+      <hi>Dashboard</hi>
+      <p>
+        <i className="fas fa-user" /> Welcome {user && user.name}
+      </p>
+      {profile !== null ? (
+        <Fragment>
+          <DashboardActions />
+        </Fragment>
+      ) : (
+        <Fragment>
+          <p>
+            You have not yet setup a profile, please add some information about
+            yourself
+          </p>
+          <Link to="create-profile">Create Profile</Link>
+        </Fragment>
+      )}
+    </Fragment>
   );
 };
 

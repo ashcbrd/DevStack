@@ -3,8 +3,3 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-.reg {
-  background: red;
-  color: red;
-}

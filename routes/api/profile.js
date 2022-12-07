@@ -6,7 +6,7 @@ const { check, validationResult } = require("express-validator");
 require("dotenv").config();
 
 const Profile = require("../../models/Profile");
-const User = require("../../models/User").default;
+const User = require("../../models/User");
 const { ResultWithContext } = require("express-validator/src/chain");
 
 // @route Get api/profile/me

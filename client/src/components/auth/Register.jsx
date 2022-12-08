@@ -35,7 +35,6 @@ const Register = ({ setAlert, register, isAuthenticated }) => {
   return (
     <div className="flex mt-10 absolute inset-0 m-w-full max-w-7xl overflow-hidden md:my-auto md:shadow-xl md:border md:border-gray-200 md:rounded-xl md:mx-auto md:h-3/4">
       <div className="hidden bg-blue-500 rounded-tr-full md:flex flex-col justify-center items-center w-full">
-        {" "}
         <h1 className="text-8xl font-bold text-white my-4">Register</h1>
         <p className="mt-10 text-center text-xs md:text-basenpm  text-white text-xs">
           Don't have an account?{" "}
@@ -103,7 +102,7 @@ const Register = ({ setAlert, register, isAuthenticated }) => {
           </div>
           <input
             type="submit"
-            className="w-full my-3 text-white rounded-full shadow-base p-1 w-32 bg-blue-500 transition-all border-2 border-blue-500 hover:opacity-80 hover:shadow-lg"
+            className="w-full my-3 text-white rounded-full shadow-base p-1 bg-blue-500 transition-all border-2 border-blue-500 hover:opacity-80 hover:shadow-lg"
             value="Register"
           />
         </form>

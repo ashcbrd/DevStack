@@ -19,8 +19,7 @@ export const Landing = ({ isAuthenticated }) => {
           </Slide>
           <Slide delay={500} left>
             <p className="text-white text-blue-500 text-xl font-sans mb-4">
-              Create a developer profile/portfolio, share posts and connect with
-              other developers in the community.
+              Share posts and connect with other developers in the community.
             </p>
           </Slide>
           <Fade delay={1500} bottom>

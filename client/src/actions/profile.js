@@ -23,7 +23,7 @@ export const getCurrentProfile = () => async (dispatch) => {
 // Create or update a profile
 
 export const createProfile =
-  (FormData, history, edit = false) =>
+  (formData, history, edit = false) =>
   async (dispatch) => {
     try {
       const config = {
@@ -32,7 +32,7 @@ export const createProfile =
         },
       };
 
-      const res = await axios.post("/api/profile", FormData, config);
+      const res = await axios.post("/api/profile", formData, config);
       dispatch({
         type: GET_PROFILE,
         payload: res.data,
@@ -60,7 +60,7 @@ export const createProfile =
   };
 
 // ADD EXPERIENCE
-export const addExperience = (FormData, history) => async (dispatch) => {
+export const addExperience = (formData, history) => async (dispatch) => {
   try {
     const config = {
       headers: {
@@ -68,7 +68,7 @@ export const addExperience = (FormData, history) => async (dispatch) => {
       },
     };
 
-    const res = axios.post("api/profile/experience", FormData, config);
+    const res = axios.post("api/profile/experience", formData, config);
 
     dispatch({
       type: UPDATE_PROFILE,
@@ -92,7 +92,7 @@ export const addExperience = (FormData, history) => async (dispatch) => {
 };
 
 // ADD EDUCATION
-export const addEducation = (FormData, history) => async (dispatch) => {
+export const addEducation = (formData, history) => async (dispatch) => {
   try {
     const config = {
       headers: {
@@ -100,7 +100,7 @@ export const addEducation = (FormData, history) => async (dispatch) => {
       },
     };
 
-    const res = axios.post("api/profile/education", FormData, config);
+    const res = axios.post("api/profile/education", formData, config);
 
     dispatch({
       type: UPDATE_PROFILE,

@@ -5,6 +5,7 @@ import { getCurrentProfile } from "actions/profile";
 import Loading from "../layout/Loading";
 import { Link } from "react-router-dom";
 import DashboardActions from "./DashboardActions";
+import Experience from "./Experience";
 
 const Dashboard = ({
   getCurrentProfile,
@@ -19,13 +20,14 @@ const Dashboard = ({
     <Loading />
   ) : (
     <Fragment>
-      <hi>Dashboard</hi>
+      <h1>Dashboard</h1>
       <p>
         <i className="fas fa-user" /> Welcome {user && user.name}
       </p>
       {profile !== null ? (
         <Fragment>
           <DashboardActions />
+          <Experience experience={profile.experience} />
         </Fragment>
       ) : (
         <Fragment>
